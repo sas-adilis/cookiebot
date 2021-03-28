@@ -1,0 +1,103 @@
+#CB_COOKIE_POLICY {
+  opacity: 0;
+}
+#CB_COOKIE_POLICY.loaded {
+  opacity: 1;
+}
+
+body #CybotCookiebotDialog {
+  border: 0;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 4px 24px, rgba(0, 0, 0, 0.05) 0 2px 6px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 13px;
+}
+body #CybotCookiebotDialogBodyContentTitle {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+}
+body #CybotCookiebotDialogBodyContentText {
+  margin-top: 5px;
+}
+body #CybotCookiebotDialogBodyContent div,
+body #CybotCookiebotDialogBodyContent {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 13px;
+  color: #666666;
+}
+body #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelectionWrapper {
+  float: none;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: flex !important;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+body #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelectionWrapper > a {
+  margin: 0;
+  position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 14px;
+  line-height: 14px;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+body #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelectionWrapper > a:hover:before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+}
+body #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelectionWrapper > a:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+body #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelectionWrapper > a:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+body #CybotCookiebotDialogBodyLevelButtonsSelectPane {
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+body #CybotCookiebotDialogBodyLevelDetailsWrapper {
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+body .CybotCookiebotDialogDetailBodyContentCookieTypeIntro,
+body #CybotCookiebotDialogDetailBodyContentTextAbout,
+body .CybotCookiebotDialogDetailBodyContentCookieTypeTable thead th,
+body .CybotCookiebotDialogDetailBodyContentCookieTypeTable tbody td,
+body #CybotCookiebotDialogDetailBodyContent a {
+  font-size: 13px;
+}
+body .CybotCookiebotDialogDetailBodyContentCookieTypeIntro,
+body #CybotCookiebotDialogDetailBodyContentTextAbout {
+  color: #666666;
+}
+body #CybotCookiebotDialogDetailFooter {
+  background-color: transparent;
+  font-size: 11px;
+  color: #666666;
+}
+body .CybotCookiebotDialogDetailBodyContentCookieTypeTable tbody td {
+  border-bottom: 1px solid #cccccc;
+}
+
+/*# sourceMappingURL=cookiebot.css.map */
