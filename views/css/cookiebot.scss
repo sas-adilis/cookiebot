@@ -1,7 +1,7 @@
 $cb_font_family : system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 $cb_font_size : 13px;
 $cb_small_font_size : 13px;
-$cb_title_font_size : 13px;
+$cb_title_font_size : 16px;
 $cb_muted_color : #666666;
 
 #CB_COOKIE_POLICY {
@@ -20,7 +20,7 @@ body { // Use to get an higher priority
   }
 
   #CybotCookiebotDialogBodyContentTitle {
-    font-size: $cb_font_size;
+    font-size: $cb_title_font_size;
     font-weight: 500;
     letter-spacing: -.3px;
   }
@@ -62,8 +62,8 @@ body { // Use to get an higher priority
       user-select: none;
       border: 1px solid transparent;
       padding: .375rem .75rem;
-      font-size: 14px;
-      line-height: 14px;
+      font-size: $cb_font_size;
+      line-height: $cb_font_size;
       border-radius: .25rem;
       transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 
@@ -93,6 +93,9 @@ body { // Use to get an higher priority
 
   #CybotCookiebotDialogBodyLevelButtonsSelectPane {
     border-radius: .25rem 0 0 .25rem;
+    .checker {
+      display: inline-block;
+    }
   }
 
   #CybotCookiebotDialogBodyLevelDetailsWrapper {

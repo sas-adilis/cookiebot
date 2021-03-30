@@ -215,8 +215,7 @@ class CookieBot extends Module
 			!Configuration::get('CB_MODE_MAINTENANCE') ||
 			(isset($this->context->employee) && Validate::isLoadedObject($this->context->employee))
 		) {
-
-			if (version_compare(_PS_VERSION_, 7, '>=')) {
+			if (version_compare(_PS_VERSION_, '1.7.0', '>=')) {
 				$this->context->controller->registerStylesheet('cookiebot-css', $this->getLocalPath() . '/views/css/cookiebot.css');
 			} else {
 				$this->context->controller->addCss($this->getLocalPath() . '/views/css/cookiebot.css');
@@ -236,7 +235,6 @@ class CookieBot extends Module
 			) &&
 			(int)Tools::getValue('id_cms') === (int)Configuration::get('CB_ID_CMS_PAGE')
 		) {
-			echo 'pass';
 			$this->context->smarty->assign(array(
 				'cb_group_domain_id' => Configuration::get('CB_ID_DOMAIN_GROUP')
 			));
