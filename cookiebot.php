@@ -33,7 +33,7 @@ class CookieBot extends Module
 		$this->need_instance = 0;
 		$this->bootstrap = true;
 		$this->tab = 'front_office_features';
-		$this->version = '1.0.1';
+		$this->version = '1.0.2';
 		$this->displayName = $this->l('CookieBot');
 		$this->description = $this->l('Easy way to in install and customize cookiebot in Prestashop.');
 
@@ -45,7 +45,8 @@ class CookieBot extends Module
 			parent::install() &&
 			$this->installCmsPage() &&
 			$this->registerHook('displayHeader') &&
-			$this->registerHook('displayFooter');
+			$this->registerHook('displayFooter') &&
+			$this->setModuleinFirst('displayHeader');
 		;
 	}
 
@@ -55,6 +56,14 @@ class CookieBot extends Module
 			Configuration::deleteByName('CB_ID_DOMAIN_GROUP') &&
 			Configuration::deleteByName('CB_MODE_MAINTENANCE')
 		;
+	}
+
+	public function setModuleinFirst($hook_name) {
+		$id_hook = Hook::getIdByName($hook_name);
+		if ((int)$id_hook) {
+			$this->updatePosition($id_hook, 0, 1);
+		}
+		return true;
 	}
 
 	public function getContent() {
